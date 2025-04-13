@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background: #f0f0f0;
+    color: black;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    width: 100%;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #df4adf;
+}
+
+.feedback-container {
+    width: 90%;
+    max-width: 800px;
+    background: v #fff;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-top: 20px;
+}
+
+
+/* 🔹 Title */
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+
+/* 🔹 Feedback List */
+
+.feedback-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* 🔹 Feedback Card */
+
+.feedback-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+}
+
+
+/* ✨ Hover Effect */
+
+.feedback-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#logout-btn {
+    background: #df4adf;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#logout-btn:hover {
+    background: #c038c0;
+    transform: scale(1.05);
+}
+
+
+/* 🔹 User Avatar */
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #f4c150;
+}
+
+.feedback-content {
+    flex-grow: 1;
+}
+
+.feedback-user {
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--text-dark);
+}
+
+.feedback-text {
+    font-size: 14px;
+    color: #444;
+    margin-top: 5px;
+}
+
+.rating {
+    color: #f4c150;
+    font-size: 16px;
+    margin-top: 3px;
+}
